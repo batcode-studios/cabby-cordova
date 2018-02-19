@@ -63,7 +63,7 @@
 <script type="text/javascript">
 import { mapGetters } from 'vuex'
 
-import { places, geocode, reverseGeocode } from '@/app/pages/home-page/service'
+import { places, geocode, reverseGeocode } from '@/app/pages/home/service'
 
 export default {
   name: 'home-page',
@@ -71,9 +71,6 @@ export default {
     ...mapGetters({
       isGeolocation: 'isGeolocation'
     })
-  },
-  created () {
-    this.getCurrentLocation()
   },
   data: () => ({
     loading: false,

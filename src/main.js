@@ -2,7 +2,10 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import Vuetify from 'vuetify'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+
 import 'vuetify/dist/vuetify.css'
+import('../node_modules/swiper/dist/css/swiper.css')
 
 import App from './App'
 import router from './router'
@@ -18,6 +21,7 @@ Vue.use(Vuetify, {
     accent: colors.indigo.base
   }
 })
+Vue.use(VueAwesomeSwiper)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
