@@ -15,7 +15,8 @@
     "cordova-build": "npm run build && cordova build",
     "cordova-browser": "npm run build && cordova run browser",
     "ios": "npm run build && cordova run ios",
-    "android": "npm run build && cordova run android --device"
+    "android": "npm run build && cordova run android --device",
+    "push": ". ./git.sh"
   },
   "dependencies": {
     "@google/maps": "^0.4.5",
